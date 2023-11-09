@@ -1,0 +1,46 @@
+body {
+    background-color: #c8c8f5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(6, 6, 68, 0.5);
+    color: aliceblue;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 1.4rem;
+    border-radius: 30px;
+}
+
+#title {
+    color: rgb(13, 34, 104);
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+#description {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(7, 87, 156);
+    margin: 0 0 2rem 0;
+    font-style: italic;
+}
+
+input, label, textarea, .subtitle, select {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.7rem 0;
+}
+
+#name, #email, #number, #dropdown, #textarea, #submit {
+    border-radius: 8px;
+    border-style: none;
+}
+
+.radio {
+    display: inline;
+    margin: 0;
+}

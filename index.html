@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Encuesta sobre juegos de Vinz</title>
 </head>
 <body>
+    <header>
+        <h1 id="title">Encuesta sobre Vinz Studios</h1>
+        <p id="description">Gracias por tomarte el tiempo de ayudarnos a mejorar</p>
+    </header>
+    <div class="container">
+        <form id="survey-form" action="post">
+            <label for="name" id="name-label">Nombre</label>
+            <input id="name" type="text" placeholder=" Chris Redflag" required>
+            <label for="email" id="email-label">email</label>
+            <input type="email" name="email" id="email" placeholder=" chris@gmail.com" required>
+            <label for="number" id="number-label">Edad</label>
+            <input type="number" id="number" min="12" max="110" placeholder=" 25">
     
+            <label for="dropdown">Género: 
+                <select id="dropdown">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                    <option value="3">Prefiero no contestar</option>
+                </select>
+            </label>
+    
+            <p class="subtitle">¿Recomendarías nuestros juegos a un amigo?</p>
+            <label for="yes"><input class="radio" id="yes" type="radio" name="recomendacion" value="1"> Definitivamente</label>
+            <label for="maybe"><input class="radio" id="maybe" type="radio" name="recomendacion" value="2"> Quizás</label>
+            <label for="no"><input class="radio" id="no" type="radio" name="recomendacion" value="3"> Probablemente no</label>
+    
+            <p class="subtitle">¿Qué es lo que más te gusta de nuestros juegos? (selecciona todas las que apliquen)</p>
+            <label for="music"><input id="music" type="checkbox" value="1"> Música</label>
+            <label for="character"><input id="character" type="checkbox" value="2"> Personajes</label>
+            <label for="history"><input id="history" type="checkbox" value="3"> Historia</label>
+            <label for="events"><input id="events" type="checkbox" value="4"> Eventos</label>
+            <label for="combat"><input id="combat" type="checkbox" value="5"> Combate</label>
+    
+            <p class="subtitle">Escribe tus comentarios o sugerencias: </p>
+            <textarea id="textarea" cols="30" rows="10" placeholder=" Me gustaría..."></textarea>
+        
+            <input type="submit" id="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>
