@@ -30,16 +30,26 @@
             </label>
     
             <p class="subtitle">¿Recomendarías nuestros juegos a un amigo?</p>
-            <label for="yes"><input class="radio" id="yes" type="radio" name="recomendacion" value="1"> Definitivamente</label>
-            <label for="maybe"><input class="radio" id="maybe" type="radio" name="recomendacion" value="2"> Quizás</label>
-            <label for="no"><input class="radio" id="no" type="radio" name="recomendacion" value="3"> Probablemente no</label>
-    
+            <div class="div-radio"><label for="yes" class="label-radio"><input class="input-radio" id="yes" type="radio" name="recomendacion" value="1" checked> Definitivamente</label></div>
+            <div class="div-radio"><label for="maybe" class="label-radio"><input class="input-radio" id="maybe" type="radio" name="recomendacion" value="2"> Quizás</label></div>
+            <div class="div-radio"><label for="no" class="label-radio"><input class="input-radio" id="no" type="radio" name="recomendacion" value="3"> Probablemente no</label></div>
+            
             <p class="subtitle">¿Qué es lo que más te gusta de nuestros juegos? (selecciona todas las que apliquen)</p>
-            <label for="music"><input id="music" type="checkbox" value="1"> Música</label>
-            <label for="character"><input id="character" type="checkbox" value="2"> Personajes</label>
-            <label for="history"><input id="history" type="checkbox" value="3"> Historia</label>
-            <label for="events"><input id="events" type="checkbox" value="4"> Eventos</label>
-            <label for="combat"><input id="combat" type="checkbox" value="5"> Combate</label>
+            <div class="div-checkbox">
+                <label for="music" class="label-checkbox"><input class="input-checkbox" id="music" type="checkbox" value="1"> Música</label>
+            </div>
+            <div class="div-checkbox">
+                <label for="character" class="label-checkbox"><input class="input-checkbox" id="character" type="checkbox" value="2"> Personajes</label>
+            </div>
+            <div class="div-checkbox">
+                <label for="history" class="label-checkbox"><input class="input-checkbox" id="history" type="checkbox" value="3"> Historia</label>
+            </div>
+            <div class="div-checkbox">
+                <label for="events" class="label-checkbox"><input class="input-checkbox" id="events" type="checkbox" value="4"> Eventos</label>
+            </div>
+            <div class="div-checkbox">
+                <label for="combat" class="label-checkbox"><input class="input-checkbox" id="combat" type="checkbox" value="5"> Combate</label>
+            </div>
     
             <p class="subtitle">Escribe tus comentarios o sugerencias: </p>
             <textarea id="textarea" cols="30" rows="10" placeholder=" Me gustaría..."></textarea>

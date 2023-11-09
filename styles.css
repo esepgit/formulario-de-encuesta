@@ -40,7 +40,23 @@ input, label, textarea, .subtitle, select {
     border-style: none;
 }
 
-.radio {
+#submit {
+    margin-top: 1rem;
+    background-color: rgb(86, 163, 86);
+    color: aliceblue;
+}
+
+.input-radio, .label-radio, .input-checkbox, .label-checkbox {
     display: inline;
-    margin: 0;
+    width: auto;
+    margin: auto;
+}
+
+.div-radio, .div-checkbox {
+    margin: 1rem auto;
+    width: 80%;
+}
+
+#submit {
+    font-size: 1rem;
 }
